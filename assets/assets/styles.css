@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans&family=Libre+Baskerville&family=Lora&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: auto;
+    width: auto;
+}
+ 
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(153deg, #0000004a, #2674ad42);
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 54px 0px 27px;
+}
+.logo{
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 70%;
+    transition: 500ms;
+}
+.logo:hover{
+    opacity: 100%;
+}
+.navlinks {
+    list-style: none;    
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    transition: all 500ms;
+    font-weight: 1000;
+}
+.navlinks a{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    transition: all 500ms;
+    font-weight: 1000;
+}
+
+.navlinks li, a:hover {
+    color: #000000;
+    transform: scale(1.05);
+    opacity: 1.01;
+    text-decoration: none;
+}
+.minilogs {
+    padding: 0px 0px 0px 10px;
+}
+body{
+    background: url(/assets/backgrounds/15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.headcontainer {
+    text-align: center;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 380px;
+    margin-bottom: 43px;
+}
+
+.headcontainer h1 {
+    color: white;
+    transition: all 500ms ease;
+    position: absolute;
+    font-size: 61px;
+    right: 253px;
+    font-family: 'Alfa Slab One', cursive;
+    z-index: 1;
+    cursor: pointer;
+}
+.headcontainer h1:hover{
+    color:#ebf918;
+    transform: scale(1.05);
+    cursor: url(icon/favicon.png)
+}
+.headcontainer p {
+    padding: 121px 251px;
+    text-align: justify;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    /* align-items: stretch; */
+    left: 211px;
+    top: 120px;
+    font-family: 'Lora', serif;
+    color: black;
+    z-index: 0;
+}
+.headcontainer h2 {
+    padding-top: 1%;
+    transition: all 500ms ease;
+    padding-bottom: 5%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.headcontainer img {
+    border-radius: 50%;
+    transition: all 500ms ease;
+    cursor: crosshair;
+    position: absolute;
+    bottom: 142px;
+    right: 959px;
+    width: 350px;
+}
+
+.headcontainer img:hover {
+    background: #000000a6;
+    transform: scale(1.05);
+}
+.footer-dark {
+    padding: 27px 0px 14px 0px;
+    color: #f0f9ff;
+    background-color: #282d32;
+    height: auto;
+}
+
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+
+.footer-dark .item.social {
+    text-align: end;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+    transition: 500ms;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+h6{
+    text-align: justify-all;
+}
+.col.item.social h6 {
+    margin-right: 57px;
+    padding-bottom: 15px;
+}
